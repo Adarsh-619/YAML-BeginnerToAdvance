@@ -1,0 +1,33 @@
+# Specify the datatype
+# Integer
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+# binaryNum: !!int 0b11001 #Note that the !!int tag is not necessary in this case, as YAML will interpret it as an integer by default.
+binaryNum: 0b11001
+octalNum: !!int 06543
+hexNum: !!int 0x45
+# commaValue: !!int +504_000 # 504,000
+commaValue: +504_000 # 504,000
+exponential numbers: 6.023E+56 
+
+# Floating point number
+simpleNumber: !!float 56.89
+infinte: !!float .inf
+not a number: !!float .nan
+
+# String
+someString: !!str "Demo String"
+
+# Boolean
+# someBoolean: !!bool No ## !!bool not required
+someBoolean: no 
+
+# Null
+surname: !!null Null # or null NULL ~
+~: This is a null key
+
+# Dates and time
+# We cannot parse it to json
+# date: !!timestamp 2024-02-06
+# india time: !!timestamp 2024-02-06T02:11:12.10 +5:30

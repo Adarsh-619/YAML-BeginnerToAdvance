@@ -1,0 +1,59 @@
+# key-value pair
+app: authentication
+port: 9000
+version: 1.7
+
+# Object
+microservice:  
+  app: authentication
+  port: 9000
+  version: 1.7
+
+
+# List
+microservices:
+  - app: authentication
+    port: 9000
+    version: 1.7
+    deployed: off # boolean
+  - app: shoppingCart
+    port: 3000
+    version: 1.1
+    deployed: on # boolean
+  - app: purchaseHistory
+    port: 8080
+    version: [1.1, '2.0', "3.1"] # list
+    deployed: off # boolean
+
+
+--- 
+
+# Write a multiline message
+multiline: |
+  demo-1
+  demo-2
+  demo-3
+
+---
+
+message1: This is a one liner  message
+
+# Write a single line message in one line
+message2: >
+  This is
+  a one liner
+  message
+
+---
+
+{fruits: "Mango", color: "Yellow", cost: 20}
+
+---
+
+# Datatypes
+number: 5474
+marks: 98.76
+booleanValue1: no # no, false, False, FALSE
+booleanValue2: YES # yes. True, true, TRUE
+
+... # Document finished here

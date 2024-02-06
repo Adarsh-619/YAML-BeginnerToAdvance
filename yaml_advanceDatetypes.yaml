@@ -1,0 +1,85 @@
+student: !!seq
+  - roll_no
+  - name
+  - marks
+
+cities: !!seq [mumbai, goa, pune]
+
+# Sometimes the key of the sequence will be empty (Sparse Sequence)
+sparse_seq:
+  - hey
+  - how
+  -
+  - Null
+  - wssup
+
+# Nested sequence
+nested_seq:
+  - fruits
+    - mango
+    - apple
+    - orange
+  - veggies
+    - tomato
+    - potato
+
+---
+# Key-value pair is called map !!map
+developer: !!map {name: "Adarsh", age: 23}
+
+---
+# pairs: keys may have duplicate values
+pair example: !!pairs
+  - job: student
+  - job: developer
+
+# This will be an array of hashtable in json
+
+---
+# Set will allow you to have unique values
+# TypeError: Object of type set is not JSON serializable
+# names: !!set
+#   ? Adarsh
+#   ? CrazyGamer
+#   ? Adarsh
+
+# ---
+
+
+# dictionary !!omap
+people: !!omap
+  - Adarsh:
+      name: Adarsh Patra
+      age: 23
+      height: 567
+  - Rahul:
+      name: Rahul OP
+      age: 22
+      height: 872
+
+---
+
+# Reusing some properties using anchors
+likes: &someName
+  fav fruits: mango
+  fav veggies: ["Tomato", "Potato"]
+
+person1:
+  name: Adarsh Patra
+  <<: *someName
+
+person2:
+  name: Alpha
+  <<: *someName
+  fav fruits: grapes
+
+person3:
+  name: Beta
+  <<: *someName
+  fav veggies: ["Potato"]
+
+
+---
+
+
+...
