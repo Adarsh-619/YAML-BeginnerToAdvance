@@ -78,8 +78,4 @@ person3:
   <<: *someName
   fav veggies: ["Potato"]
 
-
----
-
-
 ...
