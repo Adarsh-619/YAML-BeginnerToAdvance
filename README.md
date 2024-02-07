@@ -2,7 +2,7 @@
 
 ## Instructions
 To utilize the Python parser, follow these steps:
-1. Clone the repository and navigate to it. 
+1. Clone the repository and navigate to it.
    ![image](https://github.com/Adarsh-619/YAML-BeginnerToAdvance/assets/53617091/894d7f77-c314-47dc-abd3-20ffd29d4ecf)
 2. Run `python -m venv yamlEnv` to create a virtual environment for installing the necessary requirements to parse YAML to JSON.
 3. Activate the environment with `.\yamlEnv\Scripts\activate`.
