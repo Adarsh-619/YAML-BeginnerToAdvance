@@ -14,5 +14,7 @@ To run the program:
 2. Receive a list of files in the current directory, and select the one you wish to study.
    ![image](https://github.com/Adarsh-619/YAML-BeginnerToAdvance/assets/53617091/b1dc2fe8-bf93-466b-beb4-e4801dfd14a2)
 
+In order to use the pre-commit check, use `pre-commit install` and then `pre-commit run --all-files`
+
 ## License
 [MIT License](LICENSE)
