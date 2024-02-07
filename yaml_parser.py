@@ -1,19 +1,18 @@
 """
 This module provides functionality to parse the yaml to json.
 
-It makes use of the yaml module to process the yaml file and converts it into json. 
+It makes use of the yaml module to process the yaml file and converts it into json.
 The repository currently has 3 files which covers all the basics of YAML
 
 Author: Adarsh Patra
 Date: February 6, 2024
 """
-
-
 import json
-# import pprint
 import os
+
 import yaml
 from termcolor import colored
+# import pprint
 
 
 files = [f for f in os.listdir(os.curdir) if os.path.isfile(f)

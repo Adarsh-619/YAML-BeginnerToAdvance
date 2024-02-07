@@ -9,7 +9,7 @@ octalNum: !!int 06543
 hexNum: !!int 0x45
 # commaValue: !!int +504_000 # 504,000
 commaValue: +504_000 # 504,000
-exponential numbers: 6.023E+56 
+exponential numbers: 6.023E+56
 
 # Floating point number
 simpleNumber: !!float 56.89
@@ -21,7 +21,7 @@ someString: !!str "Demo String"
 
 # Boolean
 # someBoolean: !!bool No ## !!bool not required
-someBoolean: no 
+someBoolean: no
 
 # Null
 surname: !!null Null # or null NULL ~
